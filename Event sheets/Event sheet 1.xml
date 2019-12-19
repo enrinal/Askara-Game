@@ -25,5 +25,29 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="809312398866863">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="247782788378284" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="685456835566117" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="625981621778857">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="493595634681832" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="849207544005051" type="Sprite">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
