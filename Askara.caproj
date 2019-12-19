@@ -15,6 +15,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -81,6 +82,9 @@
                 <behavior-type name="Platform" sid="965588176450479">
                     <behavior id="Platform" />
                 </behavior-type>
+                <behavior-type name="ScrollTo" sid="691938998643779">
+                    <behavior id="scrollto" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="7" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="658080412289375" speed="5">
@@ -105,6 +109,30 @@
         </object-type>
         <object-type name="Keyboard" sid="826186262368627">
             <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="tile2" sid="631713977837319">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="893428735112280">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="130834500856997" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Tiles_rock\tile28.png">
+                        <collision-poly>
+                            <point x="0.203125" y="0.203125" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.953125" y="0.5" />
+                            <point x="0.78125" y="0.78125" />
+                            <point x="0.5" y="0.8125" />
+                            <point x="0.21875" y="0.78125" />
+                            <point x="0.046875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
