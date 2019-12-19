@@ -134,6 +134,59 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="postapocalypse" sid="288791774415507">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="996749200993620" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maateri kuliah\SARJANA\semester 7\TEKGAME\TUBES\craftpix-901125-free-post-apocalyptic-pixel-art-game-backgrounds\PNG\Postapocalypce1\Pale\postapocalypse1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="road" sid="394718409900513">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="798537482008533">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="232967378604609" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="-1.9086" original-source="D:\maateri kuliah\SARJANA\semester 7\TEKGAME\TUBES\craftpix-901125-free-post-apocalyptic-pixel-art-game-backgrounds\PNG\Postapocalypce1\Pale\road.png">
+                        <collision-poly>
+                            <point x="0.472945" y="0.0698925" />
+                            <point x="0.5" y="0.0483871" />
+                            <point x="0.529136" y="0.0483871" />
+                            <point x="0.99948" y="0.994624" />
+                            <point x="0.000520291" y="0.994624" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_background_" sid="615749781991992">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="292567374980279" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maateri kuliah\SARJANA\semester 7\TEKGAME\TUBES\craftpix-402033-free-horizontal-2d-game-backgrounds\PNG\game_background_2\game_background_2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_background_2" sid="473973795819275">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="244652543572010" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maateri kuliah\SARJANA\semester 7\TEKGAME\TUBES\craftpix-402033-free-horizontal-2d-game-backgrounds\PNG\game_background_3\game_background_3. 2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_background_3" sid="476654262426166">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="709374255173848" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maateri kuliah\SARJANA\semester 7\TEKGAME\TUBES\craftpix-402033-free-horizontal-2d-game-backgrounds\PNG\game_background_4\game_background_4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
