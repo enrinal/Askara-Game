@@ -8,9 +8,14 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>jb4k4k3ctw5q</unique-id>
-    <saved-with-version>26500</saved-with-version>
-    <used-plugins />
-    <used-behaviors />
+    <saved-with-version>27500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -37,7 +42,67 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder />
+    <object-folder>
+        <object-type name="Background" sid="707982171207055">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="237938174806559" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Background\Bright\Background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tile" sid="110009664012890">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="597721988692664">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="426210694520383" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Tiles_rock\tile2.png">
+                        <collision-poly>
+                            <point x="0.203125" y="0.203125" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="926641522850829">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="965588176450479">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="7" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="658080412289375" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_IDLE\_IDLE_000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_IDLE\_IDLE_001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_IDLE\_IDLE_002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_IDLE\_IDLE_003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_IDLE\_IDLE_004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_IDLE\_IDLE_005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_IDLE\_IDLE_006.png" />
+                </animation>
+                <animation framecount="7" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="255418267093486" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500473" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_WALK\_WALK_000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500473" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_WALK\_WALK_001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500473" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_WALK\_WALK_002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500473" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_WALK\_WALK_003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500473" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_WALK\_WALK_004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500473" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_WALK\_WALK_005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500473" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_WALK\_WALK_006.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
     <families />
     <layout-folder>
         <layout>Level 1.xml</layout>
