@@ -12,8 +12,10 @@
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -78,6 +80,9 @@
         </object-type>
         <object-type name="Sprite" sid="926641522850829">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="heart" sid="930000635996572" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="965588176450479">
                     <behavior id="Platform" />
@@ -85,10 +90,12 @@
                 <behavior-type name="ScrollTo" sid="691938998643779">
                     <behavior id="scrollto" />
                 </behavior-type>
+                <behavior-type name="Flash" sid="579381042709720">
+                    <behavior id="Flash" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="7" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="658080412289375" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_IDLE\_IDLE_000.png" />
+                <animation framecount="6" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="658080412289375" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_IDLE\_IDLE_001.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_IDLE\_IDLE_002.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_IDLE\_IDLE_003.png" />
@@ -104,6 +111,15 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.500473" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_WALK\_WALK_004.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.500473" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_WALK\_WALK_005.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.500473" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_WALK\_WALK_006.png" />
+                </animation>
+                <animation framecount="7" loop="0" name="Die" pingpong="0" repeatcount="1" repeatto="0" sid="567511520329533" speed="5">
+                    <frame duration="1" hotspotX="0.500272" hotspotY="0.500365" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_DIE\_DIE_000.png" />
+                    <frame duration="1" hotspotX="0.500272" hotspotY="0.500365" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_DIE\_DIE_001.png" />
+                    <frame duration="1" hotspotX="0.500272" hotspotY="0.500365" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_DIE\_DIE_002.png" />
+                    <frame duration="1" hotspotX="0.500272" hotspotY="0.500365" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_DIE\_DIE_003.png" />
+                    <frame duration="1" hotspotX="0.500272" hotspotY="0.500365" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_DIE\_DIE_004.png" />
+                    <frame duration="1" hotspotX="0.500272" hotspotY="0.500365" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_DIE\_DIE_005.png" />
+                    <frame duration="1" hotspotX="0.500272" hotspotY="0.500365" original-source="D:\Users\muham\Downloads\Compressed\craftpix-062999-2d-fantasy-knight-free-sprite-sheets\_PNG\1_KNIGHT\_DIE\_DIE_006.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -129,6 +145,286 @@
                             <point x="0.5" y="0.8125" />
                             <point x="0.21875" y="0.78125" />
                             <point x="0.046875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="marker_statue" sid="116553219246661">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="454443534890005" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Details\marker_statue1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.703125" y="0.296875" />
+                            <point x="0.703125" y="0.5" />
+                            <point x="0.65625" y="0.65625" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.328125" y="0.671875" />
+                            <point x="0.28125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="683121019699585">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="move" sid="622464983092709" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="482518585114905">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="7" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="173477544593526" speed="5">
+                    <frame duration="1" hotspotX="0.500608" hotspotY="0.50087" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\WALK\WALK_000.png" />
+                    <frame duration="1" hotspotX="0.500608" hotspotY="0.50087" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\WALK\WALK_001.png" />
+                    <frame duration="1" hotspotX="0.500608" hotspotY="0.50087" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\WALK\WALK_002.png" />
+                    <frame duration="1" hotspotX="0.500608" hotspotY="0.50087" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\WALK\WALK_003.png" />
+                    <frame duration="1" hotspotX="0.500608" hotspotY="0.50087" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\WALK\WALK_004.png" />
+                    <frame duration="1" hotspotX="0.500608" hotspotY="0.50087" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\WALK\WALK_005.png" />
+                    <frame duration="1" hotspotX="0.500608" hotspotY="0.50087" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\WALK\WALK_006.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="IDLE_" sid="800568062275752">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="305053766404148" speed="5">
+                    <frame duration="1" hotspotX="0.50065" hotspotY="0.500904" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\IDLE\IDLE_000.png">
+                        <collision-poly>
+                            <point x="0.196359" y="0.273056" />
+                            <point x="0.49935" y="0.0271248" />
+                            <point x="0.63459" y="0.508137" />
+                            <point x="0.846554" y="0.499096" />
+                            <point x="0.871261" y="0.820976" />
+                            <point x="0.49935" y="0.962025" />
+                            <point x="0.123537" y="0.82821" />
+                            <point x="0.0923277" y="0.499096" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50065" hotspotY="0.500904" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\IDLE\IDLE_001.png">
+                        <collision-poly>
+                            <point x="0.196359" y="0.273056" />
+                            <point x="0.49935" y="0.0253165" />
+                            <point x="0.639792" y="0.500904" />
+                            <point x="0.856957" y="0.499096" />
+                            <point x="0.86606" y="0.813743" />
+                            <point x="0.49935" y="0.962025" />
+                            <point x="0.124837" y="0.826401" />
+                            <point x="0.083225" y="0.499096" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50065" hotspotY="0.500904" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\IDLE\IDLE_002.png">
+                        <collision-poly>
+                            <point x="0.195059" y="0.271248" />
+                            <point x="0.49935" y="0.0253165" />
+                            <point x="0.644993" y="0.493671" />
+                            <point x="0.86606" y="0.499096" />
+                            <point x="0.860858" y="0.80651" />
+                            <point x="0.49935" y="0.962025" />
+                            <point x="0.117035" y="0.837251" />
+                            <point x="0.0728218" y="0.499096" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50065" hotspotY="0.500904" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\IDLE\IDLE_003.png">
+                        <collision-poly>
+                            <point x="0.193758" y="0.269439" />
+                            <point x="0.49935" y="0.0253165" />
+                            <point x="0.650195" y="0.486438" />
+                            <point x="0.892068" y="0.499096" />
+                            <point x="0.853056" y="0.79566" />
+                            <point x="0.49935" y="0.962025" />
+                            <point x="0.114434" y="0.840868" />
+                            <point x="0.0624187" y="0.499096" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50065" hotspotY="0.500904" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\IDLE\IDLE_004.png">
+                        <collision-poly>
+                            <point x="0.193758" y="0.269439" />
+                            <point x="0.49935" y="0.0253165" />
+                            <point x="0.650195" y="0.486438" />
+                            <point x="0.892068" y="0.499096" />
+                            <point x="0.853056" y="0.79566" />
+                            <point x="0.49935" y="0.962025" />
+                            <point x="0.114434" y="0.840868" />
+                            <point x="0.0624187" y="0.499096" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50065" hotspotY="0.500904" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\IDLE\IDLE_005.png">
+                        <collision-poly>
+                            <point x="0.195059" y="0.271248" />
+                            <point x="0.49935" y="0.0253165" />
+                            <point x="0.644993" y="0.493671" />
+                            <point x="0.86606" y="0.499096" />
+                            <point x="0.860858" y="0.80651" />
+                            <point x="0.49935" y="0.962025" />
+                            <point x="0.117035" y="0.837251" />
+                            <point x="0.0728218" y="0.499096" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50065" hotspotY="0.500904" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\IDLE\IDLE_006.png">
+                        <collision-poly>
+                            <point x="0.196359" y="0.273056" />
+                            <point x="0.49935" y="0.0253165" />
+                            <point x="0.639792" y="0.500904" />
+                            <point x="0.856957" y="0.499096" />
+                            <point x="0.86606" y="0.813743" />
+                            <point x="0.49935" y="0.962025" />
+                            <point x="0.124837" y="0.826401" />
+                            <point x="0.083225" y="0.499096" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tile3" sid="949020725675277">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="983998873661034">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="956537768326681" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Tiles_rock\tile33.png">
+                        <collision-poly>
+                            <point x="0.203125" y="0.203125" />
+                            <point x="0.5" y="0.21875" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="1" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.640625" />
+                            <point x="0.4375" y="0.5625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tile4" sid="572848117993950">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="594777204744719">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="706758009318110" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Tiles_rock\tile30.png">
+                        <collision-poly>
+                            <point x="0.203125" y="0.203125" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="1" y="0.5" />
+                            <point x="0.78125" y="0.78125" />
+                            <point x="0.5" y="0.8125" />
+                            <point x="0.1875" y="0.8125" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="trap" sid="334687999812182">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="956326129572971" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Details\trap1.png">
+                        <collision-poly>
+                            <point x="0.289063" y="0.289063" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.765625" y="0.5" />
+                            <point x="0.664063" y="0.664063" />
+                            <point x="0.5" y="0.71875" />
+                            <point x="0.335938" y="0.664063" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="door" sid="346975929993722">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="285108369621555" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Details\door.png">
+                        <collision-poly>
+                            <point x="0.328125" y="0.328125" />
+                            <point x="0.5" y="0.171875" />
+                            <point x="0.671875" y="0.328125" />
+                            <point x="0.71875" y="0.5" />
+                            <point x="0.734375" y="0.734375" />
+                            <point x="0.5" y="0.8125" />
+                            <point x="0.28125" y="0.71875" />
+                            <point x="0.296875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="torch1_" sid="602444864811560">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="182136584318953" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Details\torch1_4.png">
+                        <collision-poly>
+                            <point x="0.328125" y="0.328125" />
+                            <point x="0.5" y="0.359375" />
+                            <point x="0.609375" y="0.390625" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.578125" y="0.578125" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.421875" y="0.578125" />
+                            <point x="0.328125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="torch2_" sid="369364487073976">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="125967688225358" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Details\torch2_3.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.296875" />
+                            <point x="0.625" y="0.375" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.640625" y="0.640625" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.265625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="156223921359464">
+            <plugin id="Spritefont2" />
+            <instance-variables>
+                <instance-variable name="type" sid="795499974162732" type="string" />
+            </instance-variables>
+            <texture />
+        </object-type>
+        <object-type name="000_0061_heart" sid="585089225883412">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="673767108108607" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\muham\Downloads\Compressed\craftpix-785611-free-dungeon-platformer-pixel-art-tileset\PNG\Items\000_0061_heart5.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.15625" />
+                            <point x="0.5" y="0.21875" />
+                            <point x="0.8125" y="0.1875" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.71875" y="0.71875" />
+                            <point x="0.5" y="0.84375" />
+                            <point x="0.28125" y="0.71875" />
+                            <point x="0.09375" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>

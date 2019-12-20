@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Flare" sid="749810278289405" static="0" type="number">0</variable>
         <event-block sid="623498697883482">
             <conditions>
                 <condition behavior="Platform" id="8" name="On moved" sid="454714003892590" type="Sprite" />
@@ -48,6 +49,202 @@
                     <param id="0" name="State">1</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="507041054189473">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="174750118943940" type="Sprite">
+                    <param id="0" name="Object">marker_statue</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="979994748144537" type="Sprite">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-12" name="Subtract from" sid="573517050666789" type="Sprite">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="956136820566662">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="683046092656347" type="Sprite">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="893046710483816" type="Sprite">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-12" name="Subtract from" sid="504790825102150" type="Sprite">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="298501213344914">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="320653418658776" type="Sprite2" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="232033001345081">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="916073065294269" type="Sprite2">
+                            <param id="0" name="Instance variable">move</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="265738329251381" type="Sprite2">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="712072418130218">
+                            <conditions>
+                                <condition behavior="Platform" id="10" name="Is by wall" sid="483504950405539" type="Sprite2">
+                                    <param id="0" name="Side">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="411716480033419" type="Sprite2">
+                                    <param id="0" name="Instance variable">move</param>
+                                    <param id="1" name="Value">&quot;left&quot;</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="878655422327380" type="Sprite2">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="871415919982200">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="900313703751803" type="Sprite2" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="688623475384526">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="529265528174052" type="Sprite2">
+                            <param id="0" name="Instance variable">move</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;left&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="167279784509013" type="Sprite2">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="359770184956718">
+                            <conditions>
+                                <condition behavior="Platform" id="10" name="Is by wall" sid="578351747829738" type="Sprite2">
+                                    <param id="0" name="Side">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="724639937504706" type="Sprite2">
+                                    <param id="0" name="Instance variable">move</param>
+                                    <param id="1" name="Value">&quot;right&quot;</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="854986814247724" type="Sprite2">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="785194249924449">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="314009447038227" type="Sprite">
+                    <param id="0" name="Object">torch1_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="560462931579153" type="torch1_" />
+                <action id="-10" name="Add to" sid="996648095798868" type="System">
+                    <param id="0" name="Variable">Flare</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="858116914515404">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="151413306655925" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="841076257940992">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="254736397320751" type="SpriteFont">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;flare&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="760983862636630" type="SpriteFont">
+                            <param id="0" name="Text">Flare</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="111008797045001">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="550493978562686" type="SpriteFont">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;heart&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="652141185237046" type="SpriteFont">
+                            <param id="0" name="Text">Sprite.heart</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="432855484332659">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="999928442899907" type="Sprite">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="597500793464631">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="159968658319386" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="613235618388643" type="Sprite">
+                            <param id="0" name="Animation">&quot;Die&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="941109231441913" type="Sprite">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="356921094268220" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="539575347556892" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

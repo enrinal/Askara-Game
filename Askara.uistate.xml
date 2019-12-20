@@ -10,12 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="1">Level 1</layout>
+        <layout order="1">Level 1</layout>
         <layout order="3">Level 2</layout>
         <layout order="4">Level 3</layout>
         <layout order="5">Level 4</layout>
         <layout order="6">Level 5</layout>
-        <event-sheet order="2">Event sheet 1</event-sheet>
+        <event-sheet active="1" order="2">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -36,5 +36,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/tile/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/tile2/" />
+        <folder expanded="1" path="animation-folder/marker_statue/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/IDLE_/" />
+        <folder expanded="1" path="animation-folder/tile3/" />
+        <folder expanded="1" path="animation-folder/tile4/" />
+        <folder expanded="1" path="animation-folder/trap/" />
+        <folder expanded="1" path="animation-folder/door/" />
+        <folder expanded="1" path="animation-folder/torch1_/" />
+        <folder expanded="1" path="animation-folder/torch2_/" />
+        <folder expanded="1" path="animation-folder/000_0061_heart/" />
     </folders-expanded>
 </c2uistate>
