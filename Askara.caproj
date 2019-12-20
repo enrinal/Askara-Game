@@ -189,6 +189,15 @@
                     <frame duration="1" hotspotX="0.500608" hotspotY="0.50087" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\WALK\WALK_005.png" />
                     <frame duration="1" hotspotX="0.500608" hotspotY="0.50087" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\WALK\WALK_006.png" />
                 </animation>
+                <animation framecount="7" loop="0" name="Die" pingpong="0" repeatcount="1" repeatto="0" sid="609544725723849" speed="5">
+                    <frame duration="1" hotspotX="0.500453" hotspotY="0.500882" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\DIE\DIE_000.png" />
+                    <frame duration="1" hotspotX="0.500453" hotspotY="0.500882" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\DIE\DIE_001.png" />
+                    <frame duration="1" hotspotX="0.500453" hotspotY="0.500882" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\DIE\DIE_002.png" />
+                    <frame duration="1" hotspotX="0.500453" hotspotY="0.500882" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\DIE\DIE_003.png" />
+                    <frame duration="1" hotspotX="0.500453" hotspotY="0.500882" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\DIE\DIE_004.png" />
+                    <frame duration="1" hotspotX="0.500453" hotspotY="0.500882" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\DIE\DIE_005.png" />
+                    <frame duration="1" hotspotX="0.500453" hotspotY="0.500882" original-source="D:\Users\muham\Downloads\craftpix-986711-2d-fantasy-trolls-free-sprite-sheets\_PNG\2_TROLL\DIE\DIE_006.png" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="IDLE_" sid="800568062275752">
